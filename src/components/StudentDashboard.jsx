@@ -8,6 +8,7 @@ import axios from "axios";
 
 export default function StudentDashboard() {
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  clog("API Base URL:", BASE_URL);
 
   const [scanResult, setScanResult] = useState("");
   const [attendanceStatus, setAttendanceStatus] = useState("");
